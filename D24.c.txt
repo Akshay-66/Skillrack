@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+	int i,a;
+	char x[1000];
+	scanf("%s", x);
+	for(i=0; i<strlen(x); i++)
+	{
+		if(x[i]=='a' || x[i]=='e' || x[i]=='i' || x[i]=='o' || x[i]=='u')
+		{
+			a = i;
+		}
+	}
+	for(i=a-1; i>=0; i--)
+	{
+		printf("%c", x[i];
+	}
+	for(i=a; i<strlen(x); i++)
+	{
+		printf("%c", x[i]);
+	}
+}
