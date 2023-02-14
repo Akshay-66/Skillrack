@@ -1,0 +1,37 @@
+//14.02.2023
+void sortTwoArrays(int array1[], int M, int array2[], int N)
+{
+    int i,j,a[1000],x=0,r;
+    for(i=0; i<M; i++)
+    {
+        a[i] = array1[i];
+    }
+    r = M;
+    for(i=0; i<N; i++)
+    {
+        a[r] = array2[i];
+        r++;
+    }
+    for(i=0; i<r; i++)
+    {
+        for(j=i+1; j<r; j++)
+        {
+            if(a[i]<a[j])
+            {
+                int q = a[i];
+                a[i] = a[j];
+                a[j] = q;
+            }
+        }
+    }
+    for(i=0; i<M; i++)
+    {
+        array1[i] = a[x];
+        x++;
+    }
+    for(i=0; i<N; i++)
+    {
+        array2[i] = a[x];
+        x++;
+    }
+}
