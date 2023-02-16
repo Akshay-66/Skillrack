@@ -1,3 +1,24 @@
+//16.02.2023
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+    int a,b,x1,x2,y1,y2,x,q,w;
+    scanf("%d %d", &a, &b);
+    q = a;
+    w = b;
+    x1 = q%100;
+    y1 = w%100;
+    x2 = q/100;
+    y2 = w/100;
+    x2 = x2 *100 + y1;
+    y2 = y2 *100 + x1;
+    printf("%d", x2 * y2);
+}
+
+
+
 //15.02.2023
 #include<stdio.h>
 #include<stdlib.h>
