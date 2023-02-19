@@ -1,3 +1,48 @@
+//19.02.2023 - Not completed on time(15 minutes)
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+    int a,b,i,j,k,m=0,n=0,z[100],o=0;
+    char x[100][1000],y[100];
+    scanf("%d %d", &a, &b);
+    for(i=0; i<a; i++)
+    {
+        scanf("%s", x[i]);
+    }
+    for(i=0; i<a; i++)
+    {
+        n = 0;
+        for(j=0; j<strlen(x[i]); j++)
+        {
+            m = 0;
+            for(k=0; k<strlen(x[i]); k++)
+            {
+                if(x[i][j]==x[i][k] && j!=k)
+                {
+                    m=1;
+                }
+            }
+            if(m==0)
+            {
+                n++;
+            }
+        }
+        z[i] = n;
+    }
+    for(i=0; i<a; i++)
+    {
+        if(z[i]<=b)
+        {
+            o++;
+        }
+    }
+    printf("%d", o);
+}
+
+
+
 //14.02.2023
 void sortTwoArrays(int array1[], int M, int array2[], int N)
 {
