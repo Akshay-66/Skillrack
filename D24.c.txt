@@ -1,3 +1,31 @@
+//19.02.2023
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+    char i,a,x[100],q=0;
+    int j;
+    scanf("%s", x);
+    for(i='a'; i<='z'; i++)
+    {
+        q = 0;
+        for(j=0; j<strlen(x); j++)
+        {
+            if(i==x[j])
+            {
+                q++;
+            }
+        }
+        if(q==0)
+        {
+            printf("%c", i);
+        }
+    }
+}
+
+
+
 //18.02.2023
 #include<stdio.h>
 #include<stdlib.h>
