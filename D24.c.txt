@@ -1,3 +1,22 @@
+//20.02.2023
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+    int a,n,i;
+    scanf("%d", &n);
+    a = n;
+    while(n>0)
+    {
+        i = n%10;
+        n /= 10;
+    }
+    printf("%d%d", i, a%10);
+}
+
+
+
 //19.02.2023
 #include<stdio.h>
 #include<stdlib.h>
