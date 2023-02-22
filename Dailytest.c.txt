@@ -1,3 +1,33 @@
+//22.02.2023
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+    int i,j,a[100],b,n,q;
+    char x[100][1000];
+    scanf("%d", &n);
+    for(i=0; i<n; i++)
+    {
+        scanf("%s %d", x[i], &a[i]);
+    }
+    for(i=0; i<n; i++)
+    {
+        printf("%s ", x[i]);
+        b = strlen(x[i]);
+        for(j=0; j<n; j++)
+        {
+            if(b==a[j])
+            {
+                q = j;
+            }
+        }
+        printf("%d\n", q+1);
+    }
+}
+
+
+
 //19.02.2023 - Not completed on time(15 minutes)
 #include<stdio.h>
 #include<stdlib.h>
