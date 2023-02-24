@@ -1,3 +1,23 @@
+//24.02.2023
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+    int a,b,i;
+    scanf("%d %d", &a, &b);
+    if(a>=b-50 && a<=b+50)
+    {
+        printf("yes");
+    }
+    else
+    {
+        printf("no");
+    }
+}
+
+
+
 //23.02.2023
 #include<stdio.h>
 #include<stdlib.h>
