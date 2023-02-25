@@ -1,3 +1,36 @@
+//25.02.2023
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+    int i,j,a,b,x[100],y[100],q,w=0,e;
+    scanf("%d %d", &a, &b);
+    for(i=1; i<b; i++){
+        scanf("%d", &x[i]);
+    }
+    q = x[1]/a;
+    for(i=1; i<=b; i++){
+        y[i] = a*q;
+        q++;
+    }
+    for(i=1; i<=b; i++){
+        w = 0;
+        for(j=1; j<b; j++){
+            if(x[j]==y[i]){
+                w = 1;
+            }
+        }
+        if(w==0){
+            e = i;
+        }
+    }
+    printf("%d", y[e]);
+    
+}
+
+
+
 //24.02.2023
 #include<stdio.h>
 #include<stdlib.h>
