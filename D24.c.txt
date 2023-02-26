@@ -1,3 +1,84 @@
+//26.02.2023
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+    int i,j,a,b,q=0,k=0,l=0,m=0,n=0,o=0,p=0;
+    char x[100];
+    scanf("%s", x);
+    while(k<strlen(x))
+    {
+        if(k%10!=5 || k==0)
+        {
+            a = alp(x,k);
+            if(a==1)
+            {
+                m++;
+            }
+            k += 5;
+        }
+        else
+        {
+            b = num(x,k);
+            if(b==1)
+            {
+                m++;
+            }
+            k += 5;
+        }
+    }
+    if(strlen(x)/5 == m)
+    {
+        printf("YES");
+    }
+    else
+    {
+        printf("NO");
+    }
+}
+int alp(char a[100], int x)
+{
+    int i,j,q=0;
+    for(i=x; i<x+5; i++)
+    {
+        if(isalpha(a[i]))
+        {
+            q++;
+        }
+    }
+    if(q==5)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
+
+int num(char a[100], int x)
+{
+    int i,j,q=0;
+    for(i=x; i<x+5; i++)
+    {
+        if(isdigit(a[i]))
+        {
+            q++;
+        }
+    }
+    if(q==5)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
+
+
+
 //25.02.2023
 #include<stdio.h>
 #include<stdlib.h>
