@@ -1,3 +1,27 @@
+//03.03.2023
+void swapFirstHalfSecondHalf(char *str)
+{
+    int q = strlen(str);
+    int w = q/2;
+    int e = 0;
+    char x[100];
+    for(int i=w; i<q; i++)
+    {
+        x[e] = str[i];
+        e++;
+    }
+    for(int i=0; i<w; i++)
+    {
+        x[e] = str[i];
+        e++;
+    }
+    for(int i=0; i<e; i++){
+        str[i] = x[i];
+    }
+}
+
+
+
 //01.03.2023
 #include<stdio.h>
 #include<stdlib.h>
