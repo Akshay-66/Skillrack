@@ -1,3 +1,29 @@
+//06.03.2023
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+    int i,a=0,b,c;
+    char x[100],y[]="aeiou";
+    scanf("%s", x);
+    for(i=0; i<strlen(x); i++)
+    {
+        if(x[i]=='a' || x[i]=='e' || x[i]=='i' || x[i]=='o' || x[i]=='u')
+        {
+            x[i] = y[a];
+            a++;
+            if(a==5)
+            {
+                a = 0;
+            }
+        }
+    }
+    puts(x);
+}
+
+
+
 //04.03.2023
 #include<stdio.h>
 #include<stdlib.h>
