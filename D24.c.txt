@@ -1,3 +1,49 @@
+//08.03.2023
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+    char x[100][100],y[20],z[100][100],p[100];
+    int n,a,b,q=0,i,j=0,k=0,m[100],o;
+    scanf("%d", &n);
+    for(i=0; i<n; i++)
+    {
+        scanf("%s", x[i]);
+    }
+    scanf("%s", y);
+    a = strlen(y);
+    for(i=0; i<n; i++)
+    {
+        b = strlen(x[i]);
+        if(strcmp(y,&x[i][b-a])==0)
+        {
+            k = 1;
+            m[q] = y;
+            strcpy(z[q],x[i]);
+            q++;
+        }
+    }
+    for(i=0; i<q; i++)
+    {
+        if(j<=strlen(z[i]))
+        {
+            j = strlen(z[i]);
+            strcpy(p,z[i]);
+        }
+    }
+    if(k==0)
+    {
+        printf("FILE NOT FOUND");
+    }
+    else
+    {
+        printf("%s", p);
+    }
+}
+
+
+
 //06.03.2023
 #include<stdio.h>
 #include<stdlib.h>
