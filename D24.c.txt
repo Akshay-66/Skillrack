@@ -1,3 +1,25 @@
+//21.03.2023
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+    char a[100], b[100];
+    int i,n,x;
+    scanf("%s\n%s\n%d", a,b, &n);
+    for(i=0; i<n; i++)
+    {
+        printf("%c", a[i]);
+    }
+    x = strlen(b);
+    i = x-n;
+    char *ptr = b;
+    ptr = ptr + i;
+    puts(ptr);
+}
+
+
+
 //15.03.2023
 #include<stdio.h>
 #include<stdlib.h>
