@@ -1,3 +1,28 @@
+//24.03.2023
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+    double x,i;
+    long int a,b;
+    scanf("%ld", &a);
+    if(a<=1000)
+    {
+        x = a*0.9;
+    }
+    else
+    {
+        x = 1000*0.9;
+        b = a-1000;
+        i = b*0.95;
+        x += i;
+    }
+    printf("%.2f", a-x);
+}
+
+
+
 //22.03.2023
 #include<stdio.h>
 #include<stdlib.h>
