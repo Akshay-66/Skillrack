@@ -1,3 +1,57 @@
+//06.04.2023
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+    int i,j,x=1,a,b,n,q=0,z,w=0,u=0;
+    scanf("%d", &n);
+    for(i=n; i>0; i--)
+    {
+        u = 0;
+        w++;
+        a = i;
+        z = q;
+        while(z>0)
+        {
+            printf("- ");
+            z--;
+        }
+        q++;
+        u = a+x-1;
+        while(a>0)
+        {
+            if(w%2==0 && i!=1)
+            {
+                //int as = u;
+                if(a==1)
+                {
+                    printf("%d", u);
+                }
+                else{
+                printf("%d * ", u);}
+                u--;                
+            }
+            else
+            {
+            if(a==1)
+            {
+                printf("%d", x);
+            }
+            else
+            {
+            printf("%d * ", x);
+            }
+            }
+            x++;
+            a--;
+        }
+        printf("\n");
+    }
+}
+
+
+
 //24.03.2023
 #include<stdio.h>
 #include<stdlib.h>
