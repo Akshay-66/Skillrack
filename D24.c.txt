@@ -1,3 +1,29 @@
+//11.04.2023
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+    char a;
+    int b,c,x,d=0,e,i;
+    scanf("%c %d", &a, &b);
+    c = a+b-1;
+    if(c>122)
+    {
+        d = c-122;
+        c = 122;
+    }
+    b -= d;
+    for(i=0; i<b; i++)
+    {
+        printf("%c", c);
+        c--;
+    }
+    //printf("%d", 'z');
+}
+
+
+
 //10.04.2023
 #include<stdio.h>
 #include<stdlib.h>
