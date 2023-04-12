@@ -1,3 +1,40 @@
+//12.04.2023
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+    int i,j,a=0,x,n;
+    scanf("%d", &n);
+    for(i=1; i<=n; i++)
+    {
+        if(i%2!=0)
+        {
+            a = a+n;
+            x = a;
+            for(j=0; j<n; j++)
+            {
+                printf("%d ", x);
+                x--;
+            }
+        }
+        else
+        {
+            x = a;
+            x++;
+            a = a+n;
+            for(j=0; j<n; j++)
+            {
+                printf("%d ", x);
+                x++;
+            }
+        }
+        printf("\n");
+    }
+}
+
+
+
 //11.04.2023
 #include<stdio.h>
 #include<stdlib.h>
