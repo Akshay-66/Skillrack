@@ -1,3 +1,28 @@
+//13.04.2023
+a = 1
+j = 0
+x = int(input())
+b = x-1
+q = b
+for i in range(x):
+    j = x
+    q = b
+    z = q
+    while j > 0:
+        #z = j
+        while z > 0:
+            print("*",end="")
+            z-=1
+            j-=1
+        print(a,end="")
+        a+=1
+        j-=1
+        b-=1
+    print("\r")
+    q-=1
+
+
+
 //12.04.2023
 #include<stdio.h>
 #include<stdlib.h>
