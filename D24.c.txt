@@ -1,3 +1,32 @@
+//16.04.2023 (1 case not passed)
+tem = 0
+num = int(input())
+strings = []
+cons = []
+for i in range(num):
+    tem+=1
+    x = input()
+    if tem != num:
+        b = x.split("\r")
+        a = b[0]
+    else:
+        a = x
+    strings.append(a)
+vowel = "aeiouAEIOU"
+for st in strings:
+    count = 0
+    for w in st:
+        if w not in vowel:
+            count+=1
+    cons.append(count)
+                
+zipp = dict(zip(strings,cons))
+
+maxx = max(zipp, key=zipp.get)
+print(maxx)
+
+
+
 //13.04.2023
 a = 1
 j = 0
