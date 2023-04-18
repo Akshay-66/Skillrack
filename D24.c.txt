@@ -1,3 +1,19 @@
+//18.04.2023
+st = input().strip()
+vow = 'aeiou'
+low = st.lower()
+cou = 0
+# print(low)
+for i in vow:
+    if i in low:
+        cou += 1
+if cou == 5:
+    print("yes")
+else:
+    print("NO")
+
+
+
 //16.04.2023 (1 case not passed)
 tem = 0
 num = int(input())
