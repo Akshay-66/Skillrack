@@ -1,3 +1,24 @@
+//19.04.2023
+def pali(s):
+    return s == s[::-1]
+
+s = input().strip()
+st = ''
+co = 0
+vo = 'aeiou'
+for i in s:
+    if i not in vo:
+        st += i
+        co = 1
+if co == 0:
+    print("-1")
+elif pali(st) == True:
+    print("YES")
+else:
+    print("NO")
+
+
+
 //10.04.2023
 #include<stdio.h>
 #include<stdlib.h>
