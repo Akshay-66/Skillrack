@@ -1,3 +1,14 @@
+//20.04.2023
+num = int(input())
+l = list(map(int,input().strip().split()))
+mid = int(num/2)
+if num%2!=0:
+    print(l[mid-1],l[mid],l[mid+1],end = ' ')
+else:
+    print(l[mid-2],l[mid-1],l[mid],l[mid+1],end = ' ')
+
+
+
 //19.04.2023
 n = input().strip()
 col = ''
