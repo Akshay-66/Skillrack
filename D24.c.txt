@@ -1,3 +1,26 @@
+//22.04.2023
+a,c = map(str,input().strip().split())
+b = int(c)
+vo = 'aeiouAEIOU'
+x = a[:b]
+y = a[-b:]
+cox = 0
+coy = 0
+for i in x:
+    if i not in vo:
+        cox += 1
+for j in y:
+    if j not in vo:
+        coy += 1
+if cox>coy:
+    print(x)
+elif coy>cox:
+    print(y)
+else:
+    print(a)
+
+
+
 //20.04.2023
 num = int(input())
 l = list(map(int,input().strip().split()))
