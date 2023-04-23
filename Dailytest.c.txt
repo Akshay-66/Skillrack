@@ -1,3 +1,26 @@
+//23.04.2023
+a,b = map(int,input().strip().split())
+mat = []
+for we in range(a):
+    ro = input().strip().split()
+    mat.append(ro)
+for i in range(a):
+    for j in range(a):
+        if(i<b or i>=a-b) and (j<b or j>=a-b):
+            continue
+        elif (i<b or i>=a-b) and (j>=b and j<a-b):
+            mat[i][j] = '*'
+        elif (j<b or j>=a-b) and (i>=b and i<a-b):
+            mat[i][j] = '*'
+        else:
+            mat[i][j] = '*'
+for i in mat:
+    for j in i:
+        print(j,end=' ')
+    print('\r')
+
+
+
 //19.04.2023
 def pali(s):
     return s == s[::-1]

@@ -1,3 +1,25 @@
+//23.04.2023
+a,b = map(int,input().strip().split())
+mat = []
+vo = 'aeiou'
+for i in range(a):
+    ro = input().strip().split()
+    mat.append(ro)
+rel = 0
+for w in mat:
+    chk = 0
+    for q in vo:
+        if q in w:
+            chk+=1
+    if chk==5:
+        rel += 1
+if rel==a:
+    print("YES")
+else:
+    print('NO')
+
+
+
 //22.04.2023
 a,c = map(str,input().strip().split())
 b = int(c)
