@@ -1,3 +1,22 @@
+//24.04.2023
+num = int(input())
+lis = []
+le = []
+for _ in range(num):
+    x = input().strip()
+    y = len(x)
+    lis.append(x)
+    le.append(y)
+ma = max(le)
+for j,i in enumerate(lis):
+    while(len(i)!=ma):
+        i = '*' + i
+    lis[j] = i
+for st in lis:
+    print(st)
+
+
+
 //23.04.2023
 a,b = map(int,input().strip().split())
 mat = []
