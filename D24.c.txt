@@ -1,3 +1,17 @@
+//25.04.2023
+st = input().strip()
+x = int(input())
+li = []
+for i in range(x,len(st)+1,x):
+    li.append(st[i-1])
+s = []
+for q in range(len(li)-1,-1,-1):
+    s.append(li[q])
+for j in s:
+    print(j,end='')
+
+
+
 //24.04.2023
 a,b = map(int,input().strip().split())
 lis = list(map(int,input().strip().split()))
