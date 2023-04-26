@@ -1,3 +1,17 @@
+//26.04.2023
+x = input().strip()
+q = len(str(x))
+y = 0
+for i in x:
+    if int(i)%2==0:
+        y+=1
+if y==q:
+    print("YES")
+else:
+    print("NO")
+
+
+
 //25.04.2023
 st = input().strip()
 x = int(input())

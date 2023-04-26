@@ -1,3 +1,17 @@
+//26.04.2023
+x = int(input())
+li = list(map(int,input().strip().split()))
+la = max(li)
+qw = str(la)
+y = 0
+for i in qw:
+    y += int(i)
+for i in li:
+    c = i/y
+    print("%.2f"%c,end=' ')
+
+
+
 //24.04.2023
 num = int(input())
 lis = []
