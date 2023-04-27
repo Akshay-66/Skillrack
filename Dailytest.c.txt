@@ -1,3 +1,15 @@
+//27.04.2023
+x,y = map(int,input().strip().split())
+li = []
+for _ in range(x):
+    st = input().strip()
+    li.append(st)
+li.sort(reverse = True)
+for i in range(y):
+    print(li[i])
+
+
+
 //26.04.2023
 x = int(input())
 li = list(map(int,input().strip().split()))

@@ -1,3 +1,26 @@
+//27.04.2023
+def chk(x,a,b,c):
+    if x%a==0 and x%b!=0 and x%c!=0:
+        return True
+    elif x%b==0 and x%a!=0 and x%c!=0:
+        return True
+    elif x%c==0 and x%a!=0 and x%b!=0:
+        return True
+    else:
+        return False
+q = 1
+wc = 0
+x,a,b,c = map(int,input().strip().split())
+for i in range(1,100):
+    if chk(i,a,b,c) == True:
+        print(i,end=' ')
+        wc += 1
+    q += 1
+    if wc == x:
+        break
+
+
+
 //26.04.2023
 x = input().strip()
 q = len(str(x))
