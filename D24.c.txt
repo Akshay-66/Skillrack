@@ -1,3 +1,24 @@
+//28.04.2023
+a = int(input())
+mati = []
+for _ in range(a):
+    ro = list(map(int,input().strip().split()))
+    mati.append(ro)
+summ = 0
+for i in range(a):
+    for j in range(a):
+        if i+j == a-1 or i==j:
+            summ += mati[i][j]
+for i in range(a):
+    for j in range(a):
+        if i+j == a-1 or i==j:
+            print(summ,end=' ')
+        else:
+            print(mati[i][j],end=' ')
+    print('\r')
+
+
+
 //27.04.2023
 def chk(x,a,b,c):
     if x%a==0 and x%b!=0 and x%c!=0:

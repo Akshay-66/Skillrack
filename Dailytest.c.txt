@@ -1,3 +1,22 @@
+//28.04.2023
+a,b = map(int,input().strip().split())
+li = []
+for _ in range(a):
+    ro = list(map(int,input().strip().split()))
+    li.append(ro)
+#print(len(li))
+l = []
+for x in range(b):
+    if x%2==0:
+        for i in range(a):
+            print(li[i][x],end=' ')
+    else:
+        for i in range(a-1,-1,-1):
+            print(li[i][x],end=' ')
+    print('\r')
+
+
+
 //27.04.2023
 x,y = map(int,input().strip().split())
 li = []
