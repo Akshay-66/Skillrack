@@ -1,3 +1,13 @@
+//29.04.2023
+x = int(input())
+li = list(map(int,input().strip().split()))
+cn = int(input())
+for i in range(-1,-cn-1,-1):
+    li[i] = li[i] * (-1)
+print(*li)
+
+
+
 //28.04.2023
 a = int(input())
 mati = []
