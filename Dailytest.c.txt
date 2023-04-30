@@ -1,3 +1,29 @@
+//30.04.2023 
+x = int(input())
+li = []
+nli = []
+le = []
+we = 0
+num = "1234567890"
+for i in range(x):
+    st = input().strip()
+    li.append(st)
+for j,i in enumerate(li):
+    q = ""
+    for w in i:
+        if w not in num:
+            q += w
+            we = 1
+    le.append(len(q))
+    nli.append(q)
+s = le.index(max(le))
+if we==0:
+    print("-1")
+else:
+    print(nli[s])
+
+
+
 //29.04.2023
 N = int(input())
 x1 = y1 = z1 = 0
