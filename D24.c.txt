@@ -1,3 +1,29 @@
+//01.05.2023
+x = int(input())
+s = 1
+for i in range(x):
+    st = ""
+    q = 'a'
+    we = x
+    d = s
+    while(we > 0):
+        print(q,end=' ')
+        st += q
+        q = chr(ord(q) + 1)
+        we -= 1
+    while(d>0):
+        print('*',end=' ')
+        d -= 1
+    ts = len(st)-1
+    while(ts>=0):
+        print(st[ts],end=' ')
+        ts -= 1
+    x -= 1
+    s += 2
+    print('\r')
+
+
+
 //30.04.2023
 s = input().strip()
 vo = "aeiou"

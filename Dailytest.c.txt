@@ -1,3 +1,38 @@
+//01.05.2023
+n = int(input())
+bo = [list(input().strip()) for _ in range(n)]
+for i in range(n):
+    for j in range(n):
+        if bo[i][j] == 'R':
+            x,y = i,j
+m = int(input())
+ms = [input().strip() for _ in range(m)]
+for mv in ms:
+    di,st = mv[0],int(mv[1:])
+    if di == 'L':
+        for i in range(st):
+            if y==0 or bo[x][y-1]=='-':
+                break
+            y -= 1
+    elif di == 'R':
+        for i in range(st):
+            if y==n-1 or bo[x][y+1]=='-':
+                break
+            y += 1
+    elif di == 'A':
+        for i in range(st):
+            if x==0 or bo[x-1][y] == '-':
+                break
+            x -= 1
+    elif di=='B':
+        for i in range(st):
+            if x==n-1 or bo[x+1][y] == '-':
+                break
+            x += 1
+print(x+1,y+1)
+
+
+
 //30.04.2023 
 x = int(input())
 li = []
