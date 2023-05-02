@@ -1,3 +1,30 @@
+//02.05.2023
+chk = input().strip()
+#w = set(chk)
+indx = int(input())
+li = []
+nm = []
+for i in range(indx):
+    x = input().strip()
+    li.append(x)
+    #a = list(set(chk) & set(x))
+    # a = Counter(x) & Counter(chk)
+    # nm.append(len(a))
+#print(li[nm.index(max(nm))])
+ma = 0
+r= ""
+for s in li:
+    cc= 0
+    for ch in chk:
+        if ch in s:
+            cc += 1
+    if cc > ma:
+        ma = cc
+        r = s
+print(r)
+
+
+
 //01.05.2023
 n = int(input())
 bo = [list(input().strip()) for _ in range(n)]
