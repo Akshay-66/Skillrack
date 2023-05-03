@@ -1,3 +1,21 @@
+//03.05.2023
+string = input().strip()
+wrong = 0
+vowel = "aeiouAEIOU"
+ind = int(len(string) / 2)
+for i in range(ind,len(string)):
+    if string[i] in vowel:
+        print(string[i],end='')
+        wrong = 1
+for i in range(ind):
+    if string[i] in vowel:
+        print(string[i],end='')
+        wrong = 1
+if wrong == 0:
+    print("-1")
+
+
+
 //02.05.2023
 num = int(input())
 li = list(map(int,input().strip().split()))
