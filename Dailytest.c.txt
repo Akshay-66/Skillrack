@@ -1,3 +1,16 @@
+//07.05.2023
+import re
+stri = input().strip()
+tosir = "abAB"
+count = 0
+vall = re.findall('[a-zA-Z]+',stri)
+for i in vall:
+    if i[-1] in tosir:
+        count += 1
+print(count)
+
+
+
 //03.05.2023
 st = input().strip()
 x = int(input())

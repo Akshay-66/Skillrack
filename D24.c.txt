@@ -1,3 +1,25 @@
+//07.05.2023
+st1 = input().strip()
+st2 = input().strip()
+li = []
+for i in range(len(st1)):
+    if st1[i] != st2[i]:
+        li.append(i)
+print(len(li))
+
+
+
+//04.05.2023
+st = input().strip()
+vol = "aeiouAEIOU"
+co = 0
+for i in range(len(st)-1):
+    if st[i] not in vol and st[i+1] not in vol:
+        co += 1
+print(co)
+
+
+
 //03.05.2023
 string = input().strip()
 wrong = 0
