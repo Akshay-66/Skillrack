@@ -1,3 +1,18 @@
+//10.05.2023
+
+string = input().strip()
+num = int(input())
+if len(string)%num==0:
+    for j,i in enumerate(string):
+        if (j+1)%num==0:
+            print(i,end='')
+else:
+    for j,i in enumerate(string):
+        if (j+1)%num!=0:
+            print(i,end='')
+
+
+
 //07.05.2023
 import re
 stri = input().strip()
