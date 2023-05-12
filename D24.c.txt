@@ -1,3 +1,27 @@
+//12.05.2023
+num = int(input())
+x = int(input())
+snum = str(num)
+rl = ""
+for i in range(len(snum)):
+    q = int(snum[i]) + x
+    rl += str(q)
+print(rl)
+
+
+//11.05.2023
+x = int(input())
+for i in range(1,x+1):
+    te = str(i)
+    q = 0
+    for j in te:
+        if int(j)%2!=0:
+            q+=1
+    if q==len(te):
+        print(i,end=' ')
+
+
+
 //10.05.2023
 a,x,y,z = map(int,input().strip().split())
 for i in range(1,a+1):

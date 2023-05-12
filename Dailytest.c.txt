@@ -1,3 +1,14 @@
+//12.05.2023
+st1 = input().strip()
+st2 = input().strip()
+rel = st1.split(st2)
+fnl = max(rel,key = len)
+if fnl:
+    print(fnl)
+else:
+    print("-1")
+
+
 //10.05.2023
 
 string = input().strip()
