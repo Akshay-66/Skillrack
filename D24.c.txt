@@ -1,3 +1,29 @@
+//16.05.2023
+def bina(bi,n):
+    ab = 0
+    st = ''
+    while(bi > 0):
+        st += str(int(bi%n))
+        bi = bi//n
+    st = st[::-1]
+    return st
+a,b = map(int,input().strip().split())
+y = bina(a,2)
+if len(y)<=b:
+    te = b - len(y)
+    q = ["0" for _ in range(te)]
+    q.append(y)
+    for i in q:
+        print(i,end='')
+else:
+    print("-1")
+
+
+//13.05.2023
+li = list(map(int,input().strip().split()))
+print("YES" if (li[0]-li[2])%li[1] == 0 else "NO")
+
+
 //12.05.2023
 num = int(input())
 x = int(input())

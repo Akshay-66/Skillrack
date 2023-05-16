@@ -1,3 +1,19 @@
+//16.05.2023
+from collections import Counter
+st,tem = map(str,input().strip().split())
+num = int(tem)
+x = len(st)
+se = Counter(st)
+boo = 'yes'
+if x%num!=0:
+    boo = 'no'
+for i in se.values():
+    if i%num!=0:
+        boo = 'no'
+        
+print(boo)
+
+
 //12.05.2023
 st1 = input().strip()
 st2 = input().strip()
