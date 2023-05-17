@@ -1,3 +1,17 @@
+//17.05.2023
+x = int(input())
+mat = []
+for i in range(x):
+    ro = list(map(int,input().strip().split()))
+    mat.append(ro)
+ind = mat[0]
+for i in range(x):
+    for j in ind:
+        q = mat[j-1]
+        print(q[i],end=' ')
+    print()
+
+
 //16.05.2023
 from collections import Counter
 st,tem = map(str,input().strip().split())

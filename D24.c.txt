@@ -1,3 +1,33 @@
+//17.05.2023
+x = int(input())
+rl = x
+q = 1
+fi = 1
+mat = []
+x = abs(x)
+for i in range(x):
+    ro = []
+    w = x - q
+    for i in range(q):
+        ro.append(fi)
+        fi += 1
+    q += 1
+    for _ in range(w):
+        ro.append('*')
+    mat.append(ro)
+if rl>0:
+    for i in mat:
+        for j in i:
+            print(j,end=' ')
+        print()
+else:
+    for i in mat:
+        for j in i[::-1]:
+            print(j,end=' ')
+        print()
+
+
+
 //16.05.2023
 def bina(bi,n):
     ab = 0
