@@ -1,3 +1,62 @@
+//20.05.2023
+ls1 = list(map(int,input().strip().split()))
+ls2 = list(map(int,input().strip().split()))
+if(max(ls1)+min(ls2) == min(ls1) + max(ls2)):
+    print("YES")
+else:
+    print('NO')
+
+
+
+//19.05.2023
+a,b = map(int,input().strip().split())
+li = list(map(int,input().strip().split()))
+po = []
+la = []
+x = b
+y = 1
+re = 0
+for i in range(20):
+    y *= x
+    po.append(y)
+for i in li:
+    if i in po:
+        la.append(i)
+        re = 1
+if re==1:
+    print(max(la))
+else:
+    print("-1")
+
+
+//18.05.2023
+q = int(input())
+li = input().strip().split()
+s = 0
+d = 0
+ss = []
+dd = []
+for i in li:
+    if len(i)==1:
+        ss.append(i)
+        s = 1
+    elif len(i)==2:
+        dd.append(i)
+        d = 1
+if ss and dd:
+    print(*ss)
+    print(*dd)
+elif dd and not ss:
+    print("-1")
+    print(*dd)
+elif ss and not dd:
+    print(*ss)
+    print("-1")
+else:
+    print("-1\r-1")
+
+
+
 //17.05.2023
 x = int(input())
 mat = []

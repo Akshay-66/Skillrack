@@ -1,3 +1,70 @@
+//20.05.2023
+n = int(input())
+x = 0
+li = [i for i in range(1,n+1)]
+for i in range(n):
+    if i==0:
+        for r in range(1,n+1):
+            print(r,end=" ")
+    elif i==n-1:
+        for r in range(n,0,-1):
+            print(r,end=" ")
+    else:
+        for j in range(n):
+            if j==0:
+                print(li[x],end=' ')
+            elif j==n-1:
+                print(li[(x+1)*-1],end=' ')
+            else:
+                print("*",end=' ')
+    x += 1
+    print()
+
+
+
+//19.05.2023
+a = input().strip()
+li = []
+st = ""
+co = 0
+for i in range(len(a)):
+    if int(a[i])%2==0:
+        y = int(a[i]) + 1
+        st += str(y)
+    else:
+        y = int(a[i]) - 1
+        st += str(y)
+ts = 0
+w = st.count(st[0])
+for j,i in enumerate(st):
+    if int(i)!=0:
+        # continue
+    # else:
+        ts = j
+        break
+if w==len(st):
+    print(st[0])
+else:
+    print(st[ts:])
+
+
+//18.05.2023
+a,x = map(str,input().strip().split())
+a = int(a)
+q = 1
+we = 0
+li = list(x)
+for i in range(a):
+    for j in range(q):
+        print(li[we],end='')
+        we += 1
+        if we==len(li):
+            we = 0
+    q += 1
+    print()
+
+
+
 //17.05.2023
 x = int(input())
 rl = x
