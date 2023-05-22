@@ -1,3 +1,17 @@
+//22.05.2023
+a,b,n = map(int,input().strip().split())
+t = a
+r = b
+li = []
+for i in range(int(n/2)+1):
+    li.append(a)
+    li.append(b)
+    a += t
+    b += r
+for i in range(n):
+    print(li[i],end=' ')
+
+
 //20.05.2023
 n = int(input())
 x = 0

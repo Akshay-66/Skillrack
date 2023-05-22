@@ -1,3 +1,20 @@
+//22.05.2023
+n = int(input())
+mat = []
+x = n-1
+for i in range(n):
+    ro = list(map(int,input().strip().split()))
+    mat.append(ro)
+for i in range(n):
+    for j in range(n):
+        if j==x:
+            print(mat[j][i],end=' ')
+        else:
+            print(mat[i][j],end=' ')
+    x -= 1
+    print()
+
+
 //20.05.2023
 ls1 = list(map(int,input().strip().split()))
 ls2 = list(map(int,input().strip().split()))
