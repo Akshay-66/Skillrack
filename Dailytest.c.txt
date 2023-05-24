@@ -1,3 +1,46 @@
+//24.05.2023
+def bina(n):
+    st = ""
+    while(n>0):
+        st = str(n%2) + st
+        n //= 2
+    return st
+x = int(input())
+y = list(bina(x))
+a = 1
+c = y.count('0')
+for i in range(len(y)):
+    if y[i] == '1':
+        print(a,end='')
+        a += 1
+    elif y[i] == '0':
+        print(c,end='')
+        c -= 1
+
+
+
+//23.05.2023
+n = int(input())
+li = []
+for i in range(n):
+    li.append(i+1)
+    li.append('*')
+li.pop(-1)
+
+x = 0
+q = n;
+for i in range(n):
+    print('-'*x,end='')
+    for t in li:
+        print(t,end='')
+    if len(li)>1:
+        li.pop(0)
+	if li:
+        li.pop(-1)
+    x+=1
+    print()
+
+
 //22.05.2023
 n = int(input())
 mat = []

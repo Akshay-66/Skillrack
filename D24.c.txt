@@ -1,3 +1,53 @@
+//24.05.2023
+x = int(input())
+mat1 = []
+mat2 = []
+mat = []
+co1 = 0
+co2 = 0
+st = "aeiouAEIOU"
+for i in range(x):
+    ro = input().strip().split()
+    mat1.append(ro)
+    for i in ro:
+        if i in st:
+            co1 += 1
+for j in range(x):
+    ro = input().strip().split()
+    mat2.append(ro)
+    for i in ro:
+        if i in st:
+            co2 += 1
+if co1>=co2:
+    mat = mat1
+else:
+    mat = mat2
+for i in mat:
+    for j in i:
+        print(j,end=' ')
+    print()
+
+
+
+//23.05.2023
+def bina(n,x):
+    if n==0:
+        return 0
+    a = ""
+    while n>0:
+        a = str(n%x) + a
+        n //= x
+    return a
+a,b = map(int,input().strip().split())
+for i in range(b):
+    if((i+1)%2!=0):
+        print(bina(a,2),end=' ')
+    else:
+        print(bina(a,8),end=' ')
+    a += 1
+
+
+
 //22.05.2023
 a,b,n = map(int,input().strip().split())
 t = a
