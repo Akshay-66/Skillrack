@@ -1,3 +1,22 @@
+//28.05.2023
+def eve(n):
+    x = list(str(n))
+    r = 0
+    for i in range(len(x)):
+        if(int(x[i])%2==0 and r==0):
+            a = x[i]
+            ini = i
+            r += 1
+        elif int(x[i])%2==0 and r==1:
+            x[ini],x[i] = x[i],x[ini]
+            r = 0
+    q = ''.join(x)
+    return int(q)
+x = int(input())
+for i in range(x):
+    print(eve(int(input())))
+
+
 //24.05.2023
 x = int(input())
 mat1 = []
