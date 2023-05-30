@@ -1,3 +1,15 @@
+//30.05.2023
+x = int(input())
+li = [i for i in range(1,x+1)]
+li1 = [j for j in range(x-1,0,-1)]
+li = li + li1
+q = 0
+for _ in range(x):
+    print(_*' *',*li[q:len(li)-q],end='\n')
+    q += 1
+
+
+
 //28.05.2023
 def eve(n):
     x = list(str(n))

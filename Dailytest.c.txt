@@ -1,3 +1,33 @@
+//30.05.2023
+x = input()
+li = []
+for i in x:
+    if(i.isdigit()):
+        li.append(int(i))
+se = list(set(li))
+co = []
+for i in se:
+    co.append(li.count(i))
+ini = co.index(max(co))
+fl1 = []
+for j,i in enumerate(co):
+    if i==max(co):
+        fl1.append(se[j])
+print(min(fl1))
+
+
+
+//29.05.2023
+def unit(n):
+    return str(n)[-1]
+x = int(input())
+li = list(map(int,input().strip().split()))
+li.sort(reverse = True)
+li.sort(key = unit,reverse = True)
+print(*li)
+
+
+
 //28.05.2023
 n = int(input())
 a = 2
