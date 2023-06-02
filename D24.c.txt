@@ -1,3 +1,29 @@
+//02.06.2023
+x = int(input())
+n = x-1
+q = 1
+w = 0
+y = x*2
+s = 0
+st = "0123456789"
+for i in range(y-1):
+    s += 1
+    print("-"*n,"<",sep='',end='')
+    for i in range(q):
+        print(int(st[w]),end='')
+        w += 1
+        if(w==len(st)):
+            w = 0
+    print(">",sep='')
+    if s>=x:
+        n += 1
+        q -= 2
+    else:
+        n -= 1
+        q += 2
+
+
+
 //30.05.2023
 x = int(input())
 li = [i for i in range(1,x+1)]

@@ -1,3 +1,28 @@
+//02.06.2023
+x = int(input())
+r = x*2 -1
+w = x
+inc = 0
+for i in range(x):
+    print(inc*"-",end='')
+    print(w,f"*{w}"*r,sep='')
+    w -= 1
+    inc += 2
+    r -= 2
+inc -= 1
+print("-"*(inc),"*",sep='')
+inc -= 1
+w += 1
+r += 2
+for i in range(x):
+    print(inc*"-",end='')
+    print(w,f"*{w}"*r,sep='')
+    w += 1
+    inc -= 2
+    r += 2
+
+
+
 //30.05.2023
 x = input()
 li = []
