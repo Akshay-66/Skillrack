@@ -1,3 +1,74 @@
+//12.06.2023
+a,b = map(int,input().strip().split())
+li = list(map(int,input().strip().split()))
+x = min(li)
+li.pop(li.index(x))
+li.sort()
+li.insert(b-1,x)
+print(*li)
+
+
+
+//07.06.2023
+def ck(x,a):
+    x = str(x)
+    for i in x:
+        if int(i) == a:
+            return 0
+    return 1
+x = 0
+a,b = map(int,input().strip().split())
+li = list(map(int,input().strip().split()))
+for i in li:
+    if(ck(i,b) == 1):
+        print(i,end=' ')
+        x = 1
+if x==0:
+    print("-1")
+
+
+
+//06.06.2023
+x,a = map(int,input().strip().split())
+li = list(map(int,input().strip().split()))
+w = 0
+s = 0
+while(w<len(li)):
+    if li[w]==a:
+        if w==x-1:
+            w += 1
+        elif li[w] == li[w+1]:
+            w += 3
+        else:
+            w += 2
+    else:
+        s += li[w]
+        w += 1
+print(s)
+
+
+
+//05.06.2023
+x = int(input())
+a = x-1
+q = 1
+for i in range(x):
+    w = x
+    e = q
+    print("- "*a,end='')
+    while(e>0):
+        print(w,end=' ')
+        e -= 1
+        if(e<q/2):
+            w += 1
+        else:
+            w -= 1
+    q += 2
+    a -= 1
+    print('\r')
+
+
+
 //02.06.2023
 x = int(input())
 r = x*2 -1
