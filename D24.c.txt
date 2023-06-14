@@ -1,3 +1,23 @@
+//14.06.2023
+st = input().strip()
+x = 0
+vo = "aeiouAEIOU"
+for i in st:
+    if i in vo:
+        x += 1
+if x%2!=0:
+    for j,i in enumerate(st):
+        if (j+1)%2!=0:
+            print(i,end='')
+elif x==0:
+    print('-1')
+else:
+    for j,i in enumerate(st):
+        if (j+1) % 2 == 0:
+            print(i,end='')
+
+
+
 //12.06.2023
 int isPresent(int M, int N)
 {
