@@ -1,3 +1,20 @@
+//15.06.2023
+import re
+st = input().strip()
+r = re.findall('(\d+|[+-]+)',st)
+x = 1
+s = int(r[0])
+while(x<len(r)):
+    b = int(r[x+1])
+    if(r[x]=='+'):
+        s -= b
+    else:
+        s += b
+    x += 2
+print(s)
+
+
+
 //14.06.2023
 st = input().strip()
 s = list(set(st))
