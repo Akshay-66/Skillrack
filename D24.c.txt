@@ -1,3 +1,27 @@
+//17.06.2023
+def nxtv(ch):
+    x = len(ch)
+    a = 0
+    while(ch[a]!='a' and ch[a]!='e' and ch[a]!='i' and ch[a]!='o' and ch[a]!='u' and a<x-1):
+        a += 1
+    return ch[a]
+st = input().strip()
+vo = "aeiouAEIOU"
+x = 0
+for i in st:
+    if i  in vo:
+        x = 1
+if x==0:
+    print('-1')
+else:
+    s = list(st)
+    for i in range(len(s)):
+        q = nxtv(st[i:])
+        if q in vo:
+            print(q,end='')
+
+
+
 //15.06.2023
 import java.util.*;
 public class Hello {
