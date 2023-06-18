@@ -1,0 +1,46 @@
+//C++ Advanced 3rd Amazon
+
+#include <bits/stdc++.h>
+ 
+using namespace std;
+
+int main(int argc, char** argv)
+{
+    int i,j,s=0,q=0,aa[100],bb[100],q1=0,q2=0,ss=100;
+    char x[1000],y[1000],a[1000][1000],b[1000],z[1000];
+    string zz;
+    getline(cin,zz);
+    cin >> x;
+    cin >> y;
+    strncpy(z,zz.c_str(), sizeof(z)-1);
+    z[sizeof(z)-1] = '\0';
+    for(i=0; i<strlen(z); i++){
+        if(z[i]!=' '){
+            b[s] = z[i];
+            s++;
+        }else {
+            s = 0;
+            strcpy(a[q],b);
+            q++;
+            memset(b,0,sizeof(b));
+        }
+    }
+    for(i=0; i<q; i++) {
+        if(strcmp(a[i],x)==0) {
+            aa[q1] = i;
+            q1++;
+        }
+        if(strcmp(a[i],y)==0) {
+            bb[q2] = i;
+            q2++;
+        }
+    }
+    for(i=0; i<q1; i++) {
+        for(j=0; j<q2; j++) {
+            if(abs(aa[i]-bb[j])<ss && abs(aa[i]-bb[j])!=0) {
+                ss = abs(aa[i]-bb[j]);
+            }
+        }
+    }
+    cout << ss;
+}
