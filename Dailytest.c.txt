@@ -1,3 +1,39 @@
+//24.06.2023
+a,b = map(int,input().strip().split());
+li = list(map(int,input().strip().split()))
+maxx = max(li)
+li.pop(li.index(maxx))
+l = [i*b for i in li]
+if maxx>=max(l):
+    print(maxx)
+else:
+    print('-1')
+
+
+
+//21.06.2023
+a,b,x = map(int,input().strip().split())
+mat = []
+for i in range(a):
+    ro = list(map(int,input().strip().split()))
+    mat.append(ro)
+for i in mat:
+    for _ in range(x):
+        for j in i:
+            for k in range(x):
+                print(j,end=' ')
+        print()
+
+
+
+//20.06.2023
+x = int(input())
+li = list(map(str,input().strip().split()))
+for i in li:
+    print(min(i),end=' ')
+
+
+
 //17.06.2023
 x = int(input())
 li = list(map(int,input().strip().split()))

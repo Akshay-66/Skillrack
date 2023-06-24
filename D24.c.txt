@@ -1,3 +1,34 @@
+//24.06.2023
+st = input().strip()
+a,b = map(int,input().strip().split())
+print(st[:a]*b)
+
+
+
+//21.06.2023
+a,b = map(int,input().strip().split())
+li = list(map(int,input().strip().split()))
+s = 0
+for i in range(0,a-b+1,1):
+    if(len(li[i:i+b]) == len(list(set(li[i:i+b])))):
+        s += 1
+print(s)
+
+
+
+//20.06.2023
+a,b = map(int,input().strip().split())
+x = min(a,b)
+for i in range(2,x+1):
+    if a%i==0 and b%i==0:
+        print(i)
+        x = 0
+        break
+if x!=0:
+    print("-1")
+
+
+
 //17.06.2023
 def nxtv(ch):
     x = len(ch)
