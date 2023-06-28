@@ -1,3 +1,46 @@
+//28.06.2023
+a,b = map(int,input().strip().split())
+mat = []
+t,r = 0,0
+q = 0
+for i in range(a):
+    ro = list(map(int,input().strip().split()))
+    mat.append(ro)
+for i in range(b):
+    s = 0
+    for j in range(a):
+        if mat[j][i]<0:
+            q = 1
+            s += 1
+    if t<s:
+        t = s
+        r = i+1
+if q==0:
+    print("-1")
+else:
+    print(r)
+
+
+
+//26.06.2023
+sst,c = map(str,input().strip().split())
+st = list(sst)
+vo = "AEIOUaeiou"
+for i in range(len(st)):
+    if st[i]==c:
+        t = 0
+        for j in range(i+1,len(st)):
+            if st[j] in vo:
+                t = 1
+                print(st[j],end='')
+                break
+        if t==0:
+            print(st[i],end='')
+    else:
+        print(st[i],end='')
+
+
+
 //24.06.2023
 st = input().strip()
 a,b = map(int,input().strip().split())
