@@ -1,3 +1,18 @@
+//30.06.2023
+n,x = map(int,input().strip().split())
+li = list(map(int,input().strip().split()))
+s = 0
+t = 0
+for i in range(len(li)):
+    if li[i]%x==0:
+        t = li[i]
+        s = 1
+    elif s==1:
+        li[i] = t
+print(*li)
+
+
+
 //28.06.2023
 a,b = map(int,input().strip().split())
 mat = []

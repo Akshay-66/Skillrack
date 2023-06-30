@@ -1,3 +1,21 @@
+//30.06.2023
+st = input().strip()
+li = list(st)
+vo = "AEIOUaeiou"
+l = []
+l.append('-')
+for i in range(len(li)):
+    if li[i] in vo:
+        if l[-1]!='-' and i!=0 and i!=len(li)-1:
+            # li[i] = '-'
+            l.append('-')
+    if li[i] not in vo:
+        l.append(li[i])
+l.pop(0)
+print(''.join(l))
+
+
+
 //28.06.2023
 x = int(input())
 a = 'a'
