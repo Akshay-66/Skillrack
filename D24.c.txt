@@ -1,3 +1,42 @@
+//07.07.2023
+x,n = map(int,input().strip().split())
+a = x%100
+b = x%10
+c = a//10 + b
+y = n - c
+z = x//100 * 1000 + y * 100 + a
+print(z)
+
+
+
+//06.07.2023
+li = []
+s = input().strip()
+x = int(input())
+a = 0
+for i in s:
+    d = i.lower()
+    if d!='a' and d!='e' and d!='i' and d!='o' and d!='u':
+        li.append(i)
+if len(li) < x:
+    print("-1")
+else:
+    print(*li[:x],sep='')
+
+
+
+//02.07.2023
+n = int(input())
+li = list(map(int,input().strip().split()))
+for i in li:
+    x = i % 10
+    if x == 0:
+        print("%.2f"%i,end=' ')
+    else:
+        print("%.2f"%(i/x),end=' ')
+
+
+
 //30.06.2023
 n,x = map(int,input().strip().split())
 li = list(map(int,input().strip().split()))

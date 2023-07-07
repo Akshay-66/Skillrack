@@ -1,3 +1,52 @@
+//07.07.2023
+n = int(input())
+li = list(map(str,input().strip().split()))
+s = sorted(li,key = len)
+if li == s:
+    print("yes")
+else:
+    print("no")
+
+
+
+//06.07.2023
+s = input().strip()
+f = s[::-1]
+x = len(f)
+y = 1
+for i in range(len(f)):
+    for j in range(x):
+        print(s[x-1],end='')
+    for j in range(y):
+        print(s[y-1],end='')
+    x -= 1
+    y += 1
+    print()
+
+
+
+//02.07.2023
+s1 = input().strip()
+s2 = input().strip()
+l1 = list(s1)
+l2 = list(s2)
+vow = "AEIOUaeiou"
+w = 0
+for i in range(len(l1)):
+    if l1[i] in vow:
+        t = 0
+        while w < len(l2):
+            if l2[w] in vow:
+                l1[i],l2[w] = l2[w],l1[i]
+                t = 1
+            w += 1
+            if t==1:
+                break
+print(*l1,sep='')
+print(*l2,sep='')
+
+
+
 //30.06.2023
 st = input().strip()
 li = list(st)
